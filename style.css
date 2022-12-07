@@ -66,10 +66,9 @@ button {
 }
 
 /* second slider */
-body {
-   
-}
+
 .carusel {
+    margin-bottom: 5rem;
     overflow: hidden;
     position: relative;
 }
@@ -124,4 +123,26 @@ body {
 }
 .carusel-slider div.active::after{
 background-color: rgba(0, 0, 0, 0.1);
+}
+/* slider dot */
+.dot-container{
+    display: flex;
+    gap:1rem;
+    width: 250px;
+    margin:0 auto;
+    margin-top: 2rem;
+}
+.slider-dot{
+    width: 20px;
+    height: 20px;
+    border:2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.slider-dot:hover{
+    transform: scale(1.1);
+}
+.dot-active{
+    background-color: #fff;
 }
